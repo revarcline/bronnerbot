@@ -9,8 +9,10 @@ Type=simple
 Restart=always
 Restart-sec=1
 User=markovbot
-WorkingDirectory=/home/axcline/codes/markovbot/
-ExecStart=/home/axcline/codes/markovbot/venv/bin/python3 /home/axcline/codes/markovbot/bot.py
+# set to project root directory
+WorkingDirectory=/path/to/bronnerbot/
+# be sure to exec with venv python
+ExecStart=./venv/bin/python3 ./bronnerbot/bot.py
 
 [Install]
 WantedBy=multi-user.target
