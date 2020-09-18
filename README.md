@@ -5,11 +5,7 @@ The bot is built on top of tweepy. For any questions logging in, please refer to
 run the bot without adding this information, then it will run in "test" mode and simply print the output to the screen.
 
 ## Instructions
-1) Add the desired text documents to the "main" method's documents variable (as a list). For an example, I included
-the plots of several Star Wars movies, the opening crawls, several Star Trek movies, and Space Balls.
 
-2) Fill out the twitter authorization information (consumer_key, consumer_secret (token), access_key, access_secret (token))
-in the main method. This must be obtained through twitter. I recommend reading about Tweepy's authorization procedure.
 secrets are stored in the secrets.py file.
 
-3) Run "python bot.py" from the command prompt.
+relies on tweepy and numpy, recommended installation is to use a virtual environment and pipenv
