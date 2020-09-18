@@ -188,10 +188,10 @@ def main():
     logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
 
-    consumer_key = 'Dd3Wd1X3PQGE3yCPdGlNwPIuN'
-    consumer_secret = 'ZcRYuAdJJTnm95dAg1z0Onaf9qFrrf3SKlrFrgYsEix6bCEbNj'
-    access_key = '1253513024280973316-VDw8qNpqABRhcoe2Nu4USO42ivbPao'
-    access_secret = '370mYugsoC0UkJFfhSRfHijODmlNl9VvqJodnBlp4aGrU'
+    consumer_key = BOT_CONSUMER_KEY
+    consumer_secret = BOT_CONSUMER_SECRET
+    access_key = BOT_ACCESS_KEY
+    access_secret = BOT_ACCESS_SECRET
 
     # consumer_key = None
     # consumer_secret = None
