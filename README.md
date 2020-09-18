@@ -13,3 +13,5 @@ python3 bot.py
 ```
 
 auth secrets are stored in the secrets.py file, consult the tweepy documentation
+
+also included a sample service file for running the bot as a systemd service
