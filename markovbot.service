@@ -1,0 +1,16 @@
+[Unit]
+Description=markov chain dr bronner twitter bot
+After=network.target
+StartLimitIntervalSec=0
+StartLimitAction=reboot
+
+[Service]
+Type=simple
+Restart=always
+Restart-sec=1
+User=markovbot
+WorkingDirectory=/home/axcline/codes/markovbot/
+ExecStart=/home/axcline/codes/markovbot/venv/bin/python3 /home/axcline/codes/markovbot/bot.py
+
+[Install]
+WantedBy=multi-user.target
