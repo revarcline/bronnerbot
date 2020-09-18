@@ -8,6 +8,7 @@ with some minor tweaks to operate [alloneallbot](https://twitter.com/alloneallbo
 from the project root, with pipenv installed:
 ```python
 python3 -m venv venv
+source venv/bin/activate
 pipenv install
 python3 bot.py
 ```
