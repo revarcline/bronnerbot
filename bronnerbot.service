@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 Restart=always
-Restart-sec=1
+RestartSec=1
 User=markovbot
 # set to project root directory
 WorkingDirectory=/path/to/bronnerbot
