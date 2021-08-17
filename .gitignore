@@ -11,6 +11,7 @@ keys.txt
 
 # Distribution / packaging
 venv/
+.venv/
 .Python
 env/
 build/

@@ -15,8 +15,9 @@ python3 bot.py
 
 auth secrets are stored in the secrets.py file, consult the [tweepy documentation](https://docs.tweepy.org/en/stable/index.html)
 
-also included a sample service file for running the bot as a systemd service - 
-make sure to use absolute paths where indicated, then:
+I've also included a sample service file for running the bot as a systemd service. I recommend creating a dedicated `markovbot` user as referenced in the service file, but you can change that line to use whichever user you'd like.
+
+While editing the file, make sure to use absolute paths where indicated, then:
 ```
 sudo cp bronnerbot.service /etc/systemd/system/
 sudo systemctl daemon-reload
