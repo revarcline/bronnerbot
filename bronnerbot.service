@@ -10,7 +10,7 @@ Restart=always
 Restart-sec=1
 User=markovbot
 # set to project root directory
-WorkingDirectory=/path/to/bronnerbot/
+WorkingDirectory=/path/to/bronnerbot
 # be sure to exec with venv python, abs path
 ExecStart=/path/to/bronnerbot/venv/bin/python3 /path/to/bronnerbot/bot.py
 

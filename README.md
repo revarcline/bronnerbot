@@ -13,7 +13,7 @@ pipenv install
 python3 bot.py
 ```
 
-auth secrets are stored in the secrets.py file, consult the tweepy documentation
+auth secrets are stored in the secrets.py file, consult the [tweepy documentation](https://docs.tweepy.org/en/stable/index.html)
 
 also included a sample service file for running the bot as a systemd service - 
 make sure to use absolute paths where indicated, then:
