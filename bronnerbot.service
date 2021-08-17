@@ -1,8 +1,6 @@
 [Unit]
 Description=markov chain dr bronner twitter bot
 After=network.target
-StartLimitIntervalSec=0
-StartLimitAction=reboot
 
 [Service]
 Type=simple
