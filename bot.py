@@ -1,10 +1,8 @@
 import numpy as np
 import string as st
 import random
-import tweepy
 import time
 import logging
-from secrets import *
 
 class Bot:
     def __init__(self,
@@ -14,7 +12,7 @@ class Bot:
                  burn_in = 250,
                  tweets_per_hour = 1):
         self._documents = documents
-        self._twitter_api = twitter_api
+        self._bsky_api = bsky_api
         self._corpus = {}
         self._logger = logging.getLogger(__name__)
         self._max_sentence_length = max_document_length
@@ -152,7 +150,7 @@ class Bot:
                 self._twitter_api.disconnect()
             time.sleep(self.sleep_timer) #Every 10 minutes
 
-class Twitter_Api():
+class Bsky_API():
     def __init__(self, consumer_key, consumer_secret, access_key, access_secret):
         self._logger = logging.getLogger(__name__)
         self._consumer_key = consumer_key
@@ -193,13 +191,9 @@ def main():
     access_key = BOT_ACCESS_KEY
     access_secret = BOT_ACCESS_SECRET
 
-    # consumer_key = None
-    # consumer_secret = None
-    # access_key = None
-    # access_secret = None
     documents = ["corpus_1.txt", "corpus_2.txt"]
 
-    twitter_api = Twitter_Api(consumer_key, consumer_secret, access_key, access_secret)
+    bsky_api = Bsky_Api(consumer_key, consumer_secret, access_key, access_secret)
     bot = Bot(documents, twitter_api)
 
     bot.run()
