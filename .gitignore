@@ -69,3 +69,4 @@ target/
 
 #hide development secrets
 secrets.py
+.envrc
